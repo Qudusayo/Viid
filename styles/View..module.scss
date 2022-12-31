@@ -1,0 +1,88 @@
+.View {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  min-height: 90vh;
+  width: 95%;
+  margin: auto;
+
+  &Modal {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1em;
+    border-radius: 12px;
+    min-width: 350px;
+    text-align: center;
+
+    &CheckMark {
+      background-color: rgb(15, 255, 163);
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 2em auto;
+    }
+
+    h2 {
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+    button {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      background-color: #eff9ff;
+      color: #192033;
+      font-size: 1em;
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25em;
+      cursor: pointer;
+
+      span {
+        &:nth-of-type(2) {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    &Shares {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2em auto;
+    }
+  }
+}
+
+.Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+
+  &Controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    div {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      cursor: pointer;
+    }
+  }
+}

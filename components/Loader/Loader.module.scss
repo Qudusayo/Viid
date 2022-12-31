@@ -1,0 +1,101 @@
+.Loader {
+  // width: 100%;
+  // height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.LoaderInner {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+  margin: auto;
+  z-index: 9999;
+
+  .Spinner {
+    width: 100%;
+    height: 100%;
+    // position: absolute;
+    top: 0;
+    left: 0%;
+    border: solid 1px #0098fd;
+    border-radius: 50%;
+  }
+
+  .Blue,
+  .White {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+  .Blue {
+    background: #0098fd;
+    animation: blueLoader 1.4s infinite linear;
+  }
+  .White {
+    background: #fff;
+    animation: whiteLoader 1.4s infinite linear;
+  }
+  .Static {
+    z-index: 100;
+    transform: scale(1);
+  }
+  .Active {
+    z-index: 200;
+    transform: scale(0.1);
+  }
+}
+
+// KEYFRAMES -------------------------------------------------------------
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes blueLoader {
+  0% {
+    z-index: 100;
+    transform: scale(1);
+  }
+  50% {
+    z-index: 100;
+    transform: scale(1);
+  }
+  51% {
+    z-index: 200;
+    transform: scale(0);
+  }
+  100% {
+    z-index: 200;
+    transform: scale(1);
+  }
+}
+
+@keyframes whiteLoader {
+  0% {
+    z-index: 200;
+    transform: scale(0);
+  }
+  50% {
+    z-index: 200;
+    transform: scale(1);
+  }
+  51% {
+    z-index: 100;
+    transform: scale(1);
+  }
+  100% {
+    z-index: 100;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,21 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 80vh;
+
+  h2,
+  p {
+    font-family: "Work Sans", sans-serif;
+  }
+
+  h2 {
+    font-size: 5em;
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 3em;
+  }
+}

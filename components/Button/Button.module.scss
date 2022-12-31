@@ -1,0 +1,38 @@
+.Button {
+  background-color: #0098fd;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2em;
+  padding: 0.75em;
+  // min-width: 200px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  flex-direction: row-reverse;
+  padding-right: 2em;
+
+  &Icon {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+  }
+
+  &Smaller {
+    font-size: 1em;
+
+    .ButtonIcon {
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
