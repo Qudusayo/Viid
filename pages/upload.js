@@ -5,7 +5,7 @@ import styles from "./../styles/Upload.module.scss";
 import Button from "../components/Button/Button";
 import Loader from "../components/Loader/Loader";
 
-export default function upload() {
+export default function Upload() {
   const [fileEntry, setFileEntry] = useState(false);
 
   const onDrop = useCallback((acceptedFiles) => {
